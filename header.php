@@ -13,9 +13,9 @@
 		<span onclick="hideMobileMenu()">Close</span>
 		<ul class="text-center">
                 <li><a href="index.php">Beranda</a></li>
-				<li><a href="tentang-sekolah.php">Media</a></li>
-				<li><a href="jurusan.php">Profile</a></li>
-				<li><a href="galeri.php">Layanan</a></li>
+				<li><a href="galeri.php">Media</a></li>
+				<li><a href="profile.php">Profile</a></li>
+				<li><a href="jurusan.php">Layanan</a></li>
 				<li><a href="informasi.php">Informasi</a></li>
 				<li><a href="kontak.php">Kontak</a></li>
 		</ul>
@@ -33,9 +33,9 @@
 
 			<ul class="header-menu">
 				<li><a href="index.php">Beranda</a></li>
-				<li><a href="tentang-sekolah.php">Media</a></li>
-				<li><a href="jurusan.php">Profile</a></li>
-				<li><a href="galeri.php">Layanan</a></li>
+				<li><a href="galeri.php">Media</a></li>
+				<li><a href="profile.php">Profile</a></li>
+				<li><a href="jurusan.php">Layanan</a></li>
 				<li><a href="informasi.php">Informasi</a></li>
 				<li><a href="kontak.php">Kontak</a></li>
 			</ul>
