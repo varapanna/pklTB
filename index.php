@@ -1,6 +1,6 @@
 <?php include 'header.php'; ?>
 
-<div class="banner" style="background-image: url('uploads/identitas/<?= $d->foto_sekolah ?>');">
+<div class="banner" style="background-image: url('uploads/taman budaya.jpg');">
     <div class="banner-text">
         <div class="container">
             <h3>Selamat Datang di Taman Budaya Provinsi Nusa Tenggara Barat</h3>

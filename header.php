@@ -2,9 +2,9 @@
 <html>
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="icon" href="uploads/identitas/<?= $d->favicon ?>">
-	<title>Website <?= $d->nama ?></title>
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="icon" href="uploads/taman budaya.jpg">
+	<title>Website Taman Budaya NTB</title>
+	<link rel="stylesheet" type="text/css" href="assets/style.css">
 </head>
 <body>
 
@@ -35,7 +35,7 @@
 				<li><a href="index.php">Beranda</a></li>
 				<li><a href="galeri.php">Media</a></li>
 				<li><a href="profile.php">Profile</a></li>
-				<li><a href="jurusan.php">Layanan</a></li>
+				<li><a href="layanan.php">Layanan</a></li>
 				<li><a href="informasi.php">Informasi</a></li>
 				<li><a href="kontak.php">Kontak</a></li>
 			</ul>
