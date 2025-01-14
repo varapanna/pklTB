@@ -27,7 +27,7 @@
 		<div class="container">
 
 			<div class="header-logo">
-				<img src="uploads/identitas/<?= $d->logo ?>" width="70">
+				<img src="uploads/tutwuri.png" width="70">
 				<h2>Taman Budaya Provinsi NTB</h2>
 			</div>
 
