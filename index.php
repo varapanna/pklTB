@@ -1,4 +1,7 @@
-<?php include 'header.php'; ?>
+<?php
+include 'koneksi.php'; // File koneksi ke database
+include 'header.php'; // Header untuk halaman
+?>
 
 <div class="banner" style="background-image: url('uploads/taman budaya.jpg');">
     <div class="banner-text">
@@ -12,7 +15,7 @@
 <div class="section">
     <div class="container text-center">
         <h3>Sambutan Kepala Taman Budaya Provinsi Nusa Tenggara Barat</h3>
-        <img src="uploads/identitas/<?= $d->foto_kepsek ?>" width="100">
+        <img src="uploads/person.png" width="100">
         <!--
         <h4><?= $d->nama_kepsek ?></h4>
         <p><?= $d->sambutan_kepsek ?></p>
@@ -20,21 +23,21 @@
     </div>
 </div>
 
-<div class="section" id="jurusan">
+<div class="section" id="layanan">
     <div class="container text-center">
         <h3>Kegiatan Yang Akan Datang</h3>
         <p>Kegiatan yang akan diselenggarakan di Taman Budaya Provinsi NTB</p>
 
         <?php
-            $jurusan = mysqli_query($conn, "SELECT * FROM jurusan ORDER BY id DESC");
-            if(mysqli_num_rows($jurusan) > 0){
-                while($j = mysqli_fetch_array($jurusan)){
+            $layanan = mysqli_query($conn, "SELECT * FROM layanan ORDER BY id DESC");
+            if(mysqli_num_rows($layanan) > 0){
+                while($j = mysqli_fetch_array($layanan)){
         ?>
 
             <div class="col-4">
-                <a href="detail-jurusan.php?id=<?= $j['id'] ?>" class="thumbnail-link">
+                <a href="detail-layanan.php?id=<?= $j['id'] ?>" class="thumbnail-link">
                 <div class="thumbnail-box">
-                    <div class="thumbail-img" style="background-image: url('uploads/jurusan/<?= $j['gambar'] ?>');">
+                    <div class="thumbail-img" style="background-image: url('assets/<?= $j['gambar'] ?>');">
                     </div>
 
                     <div class="thumbnail-text">
