@@ -5,15 +5,15 @@
 			<h3 class="text-center">Layanan</h3>
 			
 			<?php
-				$jurusan = mysqli_query($conn, "SELECT * FROM jurusan ORDER BY id DESC");
-				if(mysqli_num_rows($jurusan) > 0){
-					while($j = mysqli_fetch_array($jurusan)){
+				$layanan = mysqli_query($conn, "SELECT * FROM layanan ORDER BY id DESC");
+				if(mysqli_num_rows($layanan) > 0){
+					while($j = mysqli_fetch_array($layanan)){
 			?>
 
 				<div class="col-4">
-					<a href="detail-jurusan.php?id=<?= $j['id'] ?>" class="thumbnail-link">
+					<a href="detail-layanan.php?id=<?= $j['id'] ?>" class="thumbnail-link">
 					<div class="thumbnail-box">
-						<div class="thumbail-img" style="background-image: url('uploads/jurusan/<?= $j['gambar'] ?>');">
+						<div class="thumbail-img" style="background-image: url('uploads/layanan/<?= $j['gambar'] ?>');">
 						</div>
 
 						<div class="thumbnail-text">

@@ -1,13 +1,22 @@
 <?php include 'header.php'; ?>
+	<?php include 'koneksi.php';
 
-<div class="section">
-    <div class="container">
-        <h3 class="text-center">Tentang Kami</h3>
-        <!--
-        <img src="uploads/identitas/<?= $d->foto_sekolah ?>" width="100%" class="image">
-        <?= $d->tentang_sekolah ?>
-        -->
-    </div>
-</div>
+	$query = mysqli_query($conn, "SELECT * FROM pengaturan LIMIT 1");
 
-<?php include 'footer.php'; ?>
+	if (mysqli_num_rows($query) > 0) {
+		$d = mysqli_fetch_object($query);
+	} else {
+		echo "Data pengaturan tidak ditemukan.";
+		exit;
+	}
+?>
+	
+	<div class="section">
+		<div class="container">
+			<h3 class="text-center">Tentang Sekolah</h3>
+			<img src="uploads/informasi/<?= $d->foto_sekolah ?>" width="100%" class="image">
+			<?= $d->tentang_sekolah ?>
+		</div>
+	</div>
+
+	<?php include 'footer.php'; ?>

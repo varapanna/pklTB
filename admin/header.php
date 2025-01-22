@@ -16,12 +16,17 @@
 		<title>Panel Admin - <?= $d->nama ?></title>
 		<link rel="stylesheet" type="text/css" href="../assets/style.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-		<script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+		<script src="../tinymce/tinymce.min.js"></script>
 		<script>
-	      tinymce.init({
-	        selector: '#keterangan'
-	      });
-	    </script>
+		tinymce.init({
+			selector: '#keterangan', // Target elemen textarea
+			menubar: true,           // Menampilkan menu bar
+			plugins: 'lists link image table', // Tambahkan plugin tambahan
+			toolbar: 'undo redo | formatselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image',
+			height: 400,             // Tinggi editor
+		});
+		</script>
+
 	</head>
 
 	<body class="bg-light">
@@ -52,8 +57,8 @@
 
 							<!-- sub menu -->
 							<ul class="dropdown">
-								<li><a href="identitas-sekolah.php">Identitas Sekolah</a></li>
-								<li><a href="tentang-sekolah.php">Tentang Sekolah</a></li>
+								<li><a href="identitas-taman-budaya.php">Identitas Taman Budaya</a></li>
+								<li><a href="tentang-taman-budaya.php">Tentang Taman Budaya</a></li>
 								<li><a href="kepala-sekolah.php">Kepala Sekolah</a></li>
 							</ul>
 						</li>
