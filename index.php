@@ -3,7 +3,7 @@ include 'koneksi.php'; // File koneksi ke database
 include 'header.php'; // Header untuk halaman
 ?>
 
-<div class="banner" style="background-image: url('uploads/taman budaya.jpg');">
+<div class="banner" style="background-image: url('uploads/informasi/taman budaya.jpg');">
     <div class="banner-text">
         <div class="container">
             <h3>Selamat Datang di Taman Budaya Provinsi Nusa Tenggara Barat</h3>
@@ -15,7 +15,7 @@ include 'header.php'; // Header untuk halaman
 <div class="section">
     <div class="container text-center">
         <h3>Sambutan Kepala Taman Budaya Provinsi Nusa Tenggara Barat</h3>
-        <img src="uploads/person.png" width="100">
+        <img src="uploads/test/person.png" width="100">
         <!--
         <h4><?= $d->nama_kepsek ?></h4>
         <p><?= $d->sambutan_kepsek ?></p>

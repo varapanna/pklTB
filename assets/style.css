@@ -11,8 +11,31 @@ a {
 	text-decoration: none;
 }
 
+html, body {
+    height: 100%; /* Pastikan body dan html memiliki tinggi 100% */
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    min-height: calc(100vh - 50px); /* Isi layar minus tinggi footer */
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    height: 50px; /* Tinggi footer */
+    background-color: #0C2D48;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    margin-top: auto; /* Pastikan footer berada di bawah */
+}
+
 .float-left {
 	float:left;
+	text-align: center;
+	padding-left: 10px;
 }bg-light
 
 .container {
@@ -144,7 +167,7 @@ form {
 
 .nav-brand {
 	display: inline-block;
-	padding:15px 0;
+	padding:25px 0;
 	margin-right: 16px;
 }
 

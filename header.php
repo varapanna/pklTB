@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="icon" href="uploads/taman budaya.jpg">
+	<link rel="icon" href="uploads/informasi/taman budaya.jpg">
 	<title>Website Taman Budaya NTB</title>
 	<link rel="stylesheet" type="text/css" href="assets/style.css">
 </head>
@@ -27,7 +27,7 @@
 		<div class="container">
 
 			<div class="header-logo">
-				<img src="uploads/tutwuri.png" width="70">
+				<img src="uploads/test/tutwuri.png" width="70">
 				<h2>Taman Budaya Provinsi NTB</h2>
 			</div>
 
