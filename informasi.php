@@ -1,8 +1,10 @@
-<?php include 'header.php'; ?>
+<?php include 'header.php';
+ ?>
 	
 	<div class="section">
 		<div class="container">
 			<h3 class="text-center">Informasi</h3>
+			<p> Berikut adalah informasi kegiatan yang telah dan akan berlangsung di Taman Budaya Provinsi Nusa Tenggara Barat </p>
 			
 			<?php
 				$informasi = mysqli_query($conn, "SELECT * FROM informasi ORDER BY id DESC");

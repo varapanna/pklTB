@@ -1,3 +1,7 @@
+<?php 
+include 'koneksi.php';
+ ?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,7 +17,7 @@
 		<span onclick="hideMobileMenu()">Close</span>
 		<ul class="text-center">
                 <li><a href="index.php">Beranda</a></li>
-				<li><a href="galeri.php">Media</a></li>
+				<li><a href="galeri.php">Galeri</a></li>
 				<li><a href="profile.php">Profile</a></li>
 				<li><a href="layanan.php">Layanan</a></li>
 				<li><a href="informasi.php">Informasi</a></li>
@@ -33,7 +37,7 @@
 
 			<ul class="header-menu">
 				<li><a href="index.php">Beranda</a></li>
-				<li><a href="galeri.php">Media</a></li>
+				<li><a href="galeri.php">Galeri</a></li>
 				<li><a href="profile.php">Profile</a></li>
 				<li><a href="layanan.php">Layanan</a></li>
 				<li><a href="informasi.php">Informasi</a></li>

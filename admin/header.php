@@ -59,7 +59,7 @@
 							<ul class="dropdown">
 								<li><a href="identitas-taman-budaya.php">Identitas Taman Budaya</a></li>
 								<li><a href="tentang-taman-budaya.php">Tentang Taman Budaya</a></li>
-								<li><a href="kepala-sekolah.php">Kepala Sekolah</a></li>
+								<li><a href="kepala-taman-budaya.php">Kepala Taman Budaya</a></li>
 							</ul>
 						</li>
 
