@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 16, 2025 at 03:42 AM
+-- Generation Time: Jan 23, 2025 at 04:11 AM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -95,7 +95,10 @@ INSERT INTO `layanan` (`id`, `nama`, `keterangan`, `gambar`, `created_at`, `upda
 (2, 'Teknik Instalasi Listrik', 'Is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when.', 'jurusan1630509492.jpg', '2021-09-01 15:18:12', '2021-09-01 22:20:07'),
 (3, 'Teknik Otomotif Kendaraan Ringan', 'Is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when.', 'jurusan1630509515.jpeg', '2021-09-01 15:18:35', '2021-09-01 22:20:01'),
 (4, 'Teknik Otomotif Sepeda Motor', 'Is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when.', 'jurusan1630509536.jpg', '2021-09-01 15:18:56', '2021-09-01 22:19:53'),
-(5, 'Teknik Pengelasan', 'Is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when.', 'jurusan1630509549.jpg', '2021-09-01 15:19:09', '2021-09-01 22:19:44');
+(5, 'Teknik Pengelasan', 'Is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when.', 'jurusan1630509549.jpg', '2021-09-01 15:19:09', '2021-09-01 22:19:44'),
+(6, 'Ketentuan Dan Alur', 'Peminjaman gedung Taman Budaya Provinsi NTB', 'layanan1737340825.jpg', '2025-01-20 02:40:25', NULL),
+(7, 'Lalalala', 'lalalala', 'layanan1737340867.jpg', '2025-01-20 02:41:07', NULL),
+(8, 'Bbbbb', 'bbb', 'layanan1737341214.png', '2025-01-20 02:46:54', NULL);
 
 -- --------------------------------------------------------
 
@@ -126,7 +129,7 @@ CREATE TABLE `pengaturan` (
 --
 
 INSERT INTO `pengaturan` (`id`, `nama`, `email`, `telepon`, `alamat`, `logo`, `favicon`, `tentang_sekolah`, `foto_sekolah`, `google_maps`, `nama_kepsek`, `foto_kepsek`, `sambutan_kepsek`, `created_at`, `updated_at`) VALUES
-(1, 'SMKN Indonesia Raya', 'smknindonesiaraya@gmail.com', '012345678911', 'Jl. Raya Merdeka No. 17, Indonesia Raya Merdeka 45.', 'logo1630507846.png', 'favicon1630507846.png', '<p style=\"text-align: center;\"><strong>TENTANG</strong></p>\r\n<p style=\"text-align: center;\">Web sekolah ini didirikan pada tahun 2021 dengan penuh kegembiraan dan semangat yang membara. Web sekolah ini berlokasi di jalur internet dengan posisi yang sangat strategis.</p>\r\n<p style=\"text-align: center;\">&nbsp;</p>\r\n<p style=\"text-align: center;\"><strong>Visi Misi</strong></p>\r\n<p style=\"text-align: center;\">Menjadikan media informasi seperti youtube sebagai sarana untuk berbagi ilmu dan pengalaman tanpa batasan tempat dan waktu, sehingga dapat dimanfaatkan dengan baik oleh para pencari ilmu.</p>', 'sekolah1631119997.jpg', 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d507096.96985692694!2d107.94752152881276!3d-6.806897416794635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6f28b23fb20643%3A0x301e8f1fc28b910!2sKabupaten%20Majalengka%2C%20Jawa%20Barat!5e0!3m2!1sid!2sid!4v1633012062374!5m2!1sid!2sid', 'Dzulfikar Nurfikri S.Ss', 'kepsek1630508274.png', '<p>Selamat datang para pencari inspirasi, semoga kalian sehat semua ya. Semangat terus dalam menuntut ilmu, jangan pernah bosan ya, kelak ilmu yang kamu pelajari hari ini, akan bermanfaat di masa yang akan datang, semoga hari-harimu selalu bahagia.</p>', '2021-08-14 15:24:49', '2021-09-30 21:28:23');
+(1, 'SAYA PUNYA', 'smknindonesiaraya@gmail.com', '112233445566', 'didepan pom bensin', 'logo1630507846.png', 'favicon1630507846.png', '<p style=\"text-align: center;\"><strong>TENTANG</strong></p>\r\n<p style=\"text-align: center;\">Web sekolah ini didirikan pada tahun 2021 dengan penuh kegembiraan dan semangat yang membara. Web sekolah ini berlokasi di jalur internet dengan posisi yang sangat strategis.</p>\r\n<p style=\"text-align: center;\">&nbsp;</p>\r\n<p style=\"text-align: center;\"><strong>Visi Misi</strong></p>\r\n<p style=\"text-align: center;\">Menjadikan media informasi seperti youtube sebagai sarana untuk berbagi ilmu dan pengalaman tanpa batasan tempat dan waktu, sehingga dapat dimanfaatkan dengan baik oleh para pencari ilmu.</p>', 'sekolah1631119997.jpg', 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3944.478291292925!2d116.0971399!3d-8.5938116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dcdbf7b376bccb5%3A0x644ee757ea4d4d1b!2sTaman%20Budaya%20Provinsi%20NTB!5e0!3m2!1sen!2sid!4v1614031728659!5m2!1sen!2sid\r\n', 'Dzulfikar Nurfikri S.Ss', 'kepsek1630508274.png', '<p>Selamat datang para pencari inspirasi, semoga kalian sehat semua ya. Semangat terus dalam menuntut ilmu, jangan pernah bosan ya, kelak ilmu yang kamu pelajari hari ini, akan bermanfaat di masa yang akan datang, semoga hari-harimu selalu bahagia.</p>', '2021-08-14 15:24:49', '2025-01-22 08:17:38');
 
 -- --------------------------------------------------------
 
@@ -206,7 +209,7 @@ ALTER TABLE `informasi`
 -- AUTO_INCREMENT for table `layanan`
 --
 ALTER TABLE `layanan`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `pengaturan`
@@ -218,7 +221,7 @@ ALTER TABLE `pengaturan`
 -- AUTO_INCREMENT for table `pengguna`
 --
 ALTER TABLE `pengguna`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
