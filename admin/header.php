@@ -52,6 +52,7 @@
 						<li><a href="layanan.php">Layanan</a></li>
 						<li><a href="galeri.php">Galeri</a></li>
 						<li><a href="informasi.php">Informasi</a></li>
+						<li><a href="berita.php">Berita</a></li>
 						<li>
 							<a href="#">Pengaturan <i class="fa fa-caret-down"></i></a>
 
