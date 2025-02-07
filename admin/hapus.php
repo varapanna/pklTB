@@ -9,24 +9,24 @@
 
 	}
 
-	if(isset($_GET['idjurusan'])){
+	if(isset($_GET['idlayanan'])){
 
-		$jurusan = mysqli_query($conn, "SELECT gambar FROM jurusan WHERE id = '".$_GET['idjurusan']."' ");
+		$layanan = mysqli_query($conn, "SELECT gambar FROM layanan WHERE id = '".$_GET['idlayanan']."' ");
 
-		if(mysqli_num_rows($jurusan) > 0){
+		if(mysqli_num_rows($layanan) > 0){
 
-			$p = mysqli_fetch_object($jurusan);
+			$p = mysqli_fetch_object($layanan);
 
-			if(file_exists("../uploads/jurusan/".$p->gambar)){
+			if(file_exists("../uploads/layanan/".$p->gambar)){
 
-				unlink("../uploads/jurusan/".$p->gambar);
+				unlink("../uploads/layanan/".$p->gambar);
 
 			}
 
 		}
 
-		$delete = mysqli_query($conn, "DELETE FROM jurusan WHERE id = '".$_GET['idjurusan']."' ");
-		echo "<script>window.location = 'jurusan.php'</script>";
+		$delete = mysqli_query($conn, "DELETE FROM layanan WHERE id = '".$_GET['idlayanan']."' ");
+		echo "<script>window.location = 'layanan.php'</script>";
 
 	}
 
