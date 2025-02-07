@@ -2,7 +2,7 @@
 	
 	<div class="section">
 		<div class="container">
-			<h3 class="text-center">Media</h3>
+			<h3 class="text-center">Galeri</h3>
             <p>Koleksi Taman Budaya Provinsi NTB</p>
 			
 			<?php
