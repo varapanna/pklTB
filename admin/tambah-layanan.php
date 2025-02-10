@@ -17,7 +17,7 @@
                         
                         <div class="form-group">
                             <label>Nama</label>
-                            <input type="text" name="nama" placeholder="Nama Jurusan" class="input-control" required>
+                            <input type="text" name="nama" placeholder="Nama Layanan" class="input-control" required>
                         </div>
 
                         <div class="form-group">
@@ -49,7 +49,7 @@
                             $filesize 	= $_FILES['gambar']['size'];
 
                             $formatfile = pathinfo($filename, PATHINFO_EXTENSION);
-                            $rename 	= 'jurusan'.time().'.'.$formatfile;
+                            $rename 	= 'layanan'.time().'.'.$formatfile;
 
                             $allowedtype = array('png', 'jpg', 'jpeg', 'gif');
 
@@ -63,9 +63,9 @@
 
                             }else{
 
-                                move_uploaded_file($tmpname, "../uploads/jurusan/".$rename);
+                                move_uploaded_file($tmpname, "../uploads/layanan/".$rename);
 
-                                $simpan = mysqli_query($conn, "INSERT INTO jurusan VALUES (
+                                $simpan = mysqli_query($conn, "INSERT INTO layanan VALUES (
                                         null,
                                         '".$nama."',
                                         '".$ket."',

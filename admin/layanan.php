@@ -49,9 +49,9 @@
 										$where .= " AND nama LIKE '%".addslashes($_GET['key'])."%' ";
 									}
 
-									$jurusan = mysqli_query($conn, "SELECT * FROM layanan $where ORDER BY id DESC");
-									if(mysqli_num_rows($jurusan) > 0){
-										while($p = mysqli_fetch_array($jurusan)){
+									$layanan = mysqli_query($conn, "SELECT * FROM layanan $where ORDER BY id DESC");
+									if(mysqli_num_rows($layanan) > 0){
+										while($p = mysqli_fetch_array($layanan)){
 								?>
 
 								<tr>

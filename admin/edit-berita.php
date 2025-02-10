@@ -1,13 +1,13 @@
 <?php include 'header.php' ?>
 
 <?php
-	$jurusan 	= mysqli_query($conn, "SELECT * FROM layanan WHERE id = '".$_GET['id']."' ");
+	$berita	= mysqli_query($conn, "SELECT * FROM berita WHERE id = '".$_GET['id']."' ");
 
-	if(mysqli_num_rows($jurusan) == 0){
+	if(mysqli_num_rows($berita) == 0){
 		echo "<script>window.location='berita.php'</script>";
 	}
 
-	$p 			= mysqli_fetch_object($jurusan);
+	$p 			= mysqli_fetch_object($berita);
 ?>
 
 		<!-- content -->

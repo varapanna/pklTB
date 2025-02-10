@@ -1,13 +1,13 @@
 <?php include 'header.php' ?>
 
 <?php
-	$jurusan 	= mysqli_query($conn, "SELECT * FROM layanan WHERE id = '".$_GET['id']."' ");
+	$layanan 	= mysqli_query($conn, "SELECT * FROM layanan WHERE id = '".$_GET['id']."' ");
 
-	if(mysqli_num_rows($jurusan) == 0){
+	if(mysqli_num_rows($layanan) == 0){
 		echo "<script>window.location='layanan.php'</script>";
 	}
 
-	$p 			= mysqli_fetch_object($jurusan);
+	$p 			= mysqli_fetch_object($layanan);
 ?>
 
 		<!-- content -->
@@ -27,7 +27,7 @@
 							
 							<div class="form-group">
 								<label>Nama</label>
-								<input type="text" name="nama" placeholder="Nama Jurusan" value="<?= $p->nama ?>" class="input-control" required>
+								<input type="text" name="nama" placeholder="Nama Layanan" value="<?= $p->nama ?>" class="input-control" required>
 							</div>
 
 							<div class="form-group">
@@ -37,12 +37,12 @@
 
 							<div class="form-group">
 								<label>Gambar</label>
-								<img src="../uploads/jurusan/<?= $p->gambar ?>" width="200px" class="image">
+								<img src="../uploads/layanan/<?= $p->gambar ?>" width="200px" class="image">
 								<input type="hidden" name="gambar2" value="<?= $p->gambar ?>">
 								<input type="file" name="gambar" class="input-control">
 							</div>
 
-							<button type="button" class="btn" onclick="window.location = 'jurusan.php'">Kembali</button>
+							<button type="button" class="btn" onclick="window.location = 'layanan.php'">Kembali</button>
 							<input type="submit" name="submit" value="Simpan" class="btn btn-blue">
 
 						</form>
