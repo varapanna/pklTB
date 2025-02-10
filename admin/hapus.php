@@ -34,7 +34,7 @@
 
 		$berita = mysqli_query($conn, "SELECT gambar FROM berita WHERE id = '".$_GET['idberita']."' ");
 
-		if(mysqli_num_rows($layanan) > 0){
+		if(mysqli_num_rows($berita) > 0){
 
 			$p = mysqli_fetch_object($berita);
 
@@ -46,8 +46,8 @@
 
 		}
 
-		$delete = mysqli_query($conn, "DELETE FROM layanan WHERE id = '".$_GET['idlayanan']."' ");
-		echo "<script>window.location = 'layanan.php'</script>";
+		$delete = mysqli_query($conn, "DELETE FROM berita WHERE id = '".$_GET['idberita']."' ");
+		echo "<script>window.location = 'berita.php'</script>";
 
 	}
 

@@ -49,9 +49,9 @@
 										$where .= " AND nama LIKE '%".addslashes($_GET['key'])."%' ";
 									}
 
-									$jurusan = mysqli_query($conn, "SELECT * FROM layanan $where ORDER BY id DESC");
-									if(mysqli_num_rows($jurusan) > 0){
-										while($p = mysqli_fetch_array($jurusan)){
+									$berita = mysqli_query($conn, "SELECT * FROM berita $where ORDER BY id DESC");
+									if(mysqli_num_rows($berita) > 0){
+										while($p = mysqli_fetch_array($berita)){
 								?>
 
 								<tr>
@@ -61,7 +61,7 @@
 									<td><img src="../uploads/berita/<?= $p['gambar'] ?>" width="100px"></td>
 									<td>
 										<a href="edit-berita.php?id=<?= $p['id'] ?>" title="Edit Data" class="text-orange"><i class="fa fa-edit"></i></a> 
-										<a href="hapus.php?idjurusan=<?= $p['id'] ?>" onclick="return confirm('Yakin ingin hapus ?')" title="Hapus Data" class="text-red"><i class="fa fa-times"></i></a>
+										<a href="hapus.php?idberita=<?= $p['id'] ?>" onclick="return confirm('Yakin ingin hapus ?')" title="Hapus Data" class="text-red"><i class="fa fa-times"></i></a>
 									</td>
 								</tr>
 

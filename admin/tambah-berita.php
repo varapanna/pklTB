@@ -49,7 +49,7 @@
                             $filesize 	= $_FILES['gambar']['size'];
 
                             $formatfile = pathinfo($filename, PATHINFO_EXTENSION);
-                            $rename 	= 'jurusan'.time().'.'.$formatfile;
+                            $rename 	= 'berita'.time().'.'.$formatfile;
 
                             $allowedtype = array('png', 'jpg', 'jpeg', 'gif');
 
@@ -65,14 +65,14 @@
 
                                 move_uploaded_file($tmpname, "../uploads/berita/".$rename);
 
-                                $simpan = mysqli_query($conn, "INSERT INTO jurusan VALUES (
-                                        null,
-                                        '".$nama."',
-                                        '".$ket."',
-                                        '".$rename."',
-                                        null,
-                                        null
-                                )");
+                                $simpan = mysqli_query($conn, "INSERT INTO berita (nama, keterangan, gambar, created_at, updated_at) 
+                              VALUES (
+                                  '".$nama."', 
+                                  '".$ket."', 
+                                  '".$rename."', 
+                                  NOW(), 
+                                  NOW()
+                              )");
 
                                 if($simpan){
                                     echo '<div class="alert alert-success">Simpan Berhasil</div>';
