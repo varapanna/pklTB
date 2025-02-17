@@ -17,7 +17,7 @@
                         
                         <div class="form-group">
                             <label>Nama</label>
-                            <input type="text" name="nama" placeholder="Nama Layanan" class="input-control" required>
+                            <input type="text" name="nama" placeholder="Nama Jurusan" class="input-control" required>
                         </div>
 
                         <div class="form-group">
