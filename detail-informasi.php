@@ -15,7 +15,7 @@
 
 			<h3 class="text-center"><?= $p->judul ?></h3>
 			<small>Dibuat pada <?= date('d/m/Y', strtotime($p->created_at)) ?>, oleh <?= $p->nama ?></small>
-			<img src="uploads/informasi/<?= $p->gambar ?>" width="100%" class="image" style="margin-top:5px">
+			<img src="uploads/informasi/<?= $p->gambar ?>" width="50%" class="image" style="margin-top:5px">
 			<?= $p->keterangan ?>
 		</div>
 	</div>

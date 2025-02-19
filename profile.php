@@ -14,7 +14,7 @@
 	<div class="section">
 		<div class="container">
 			<h3 class="text-center">Tentang Taman Budaya</h3>
-			<img src="uploads/informasi/<?= $d->foto_sekolah ?>" width="100%" class="image">
+			<img src="uploads/informasi/<?= $d->foto_sekolah ?>" width="50%" class="image">
 			<?= $d->tentang_sekolah ?>
 		</div>
 	</div>

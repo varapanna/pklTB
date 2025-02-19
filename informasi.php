@@ -15,7 +15,7 @@
 				<div class="col-4">
 					<a href="detail-informasi.php?id=<?= $p['id'] ?>" class="thumbnail-link">
 					<div class="thumbnail-box">
-						<div class="thumbail-img" style="background-image: url('uploads/informasi/<?= $p['gambar'] ?>');">
+						<div class="thumbail-img" style="background-image: url('uploads/informasi/<?= $p['gambar'] ?>'); "width="50%" class="image" >
 						</div>
 
 						<div class="thumbnail-text">

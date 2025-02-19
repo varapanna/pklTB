@@ -254,6 +254,7 @@ form {
 .image {
 	border:1px solid #ddd;
 	padding:5px;
+	align-content: center;
 }
 
 .header {

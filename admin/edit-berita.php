@@ -10,6 +10,18 @@
 	$p 			= mysqli_fetch_object($berita);
 ?>
 
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<script src="../tinymce/tinymce.min.js"></script>
+		<script>
+		tinymce.init({
+			selector: 'textarea[name="keterangan"]', // Target elemen textarea
+			menubar: true,           // Menampilkan menu bar
+			plugins: 'lists link image table', // Tambahkan plugin tambahan
+			toolbar: 'undo redo | formatselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image',
+			height: 400,             // Tinggi editor
+		});
+		</script>
+		
 		<!-- content -->
 		<div class="content">
 

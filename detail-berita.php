@@ -14,7 +14,7 @@
 			?>
 
 			<h3 class="text-center"><?= $p->nama ?></h3>
-			<img src="uploads/berita/<?= $p->gambar ?>" width="100%" class="image">
+			<img src="uploads/berita/<?= $p->gambar ?>" width="50%" class="image">
 			<?= $p->keterangan ?>
 		</div>
 	</div>
