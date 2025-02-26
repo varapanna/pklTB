@@ -5,9 +5,9 @@
 			<h3 class="text-center">Berita</h3>
 			
 			<?php
-				$layanan = mysqli_query($conn, "SELECT * FROM layanan ORDER BY id DESC");
-				if(mysqli_num_rows($layanan) > 0){
-					while($j = mysqli_fetch_array($layanan)){
+				$berita = mysqli_query($conn, "SELECT * FROM berita ORDER BY id DESC");
+				if(mysqli_num_rows($berita) > 0){
+					while($j = mysqli_fetch_array($berita)){
 			?>
 
 				<div class="col-4">
